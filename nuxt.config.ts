@@ -45,7 +45,7 @@ export default defineNuxtConfig({
   },
 
   sitemap: {
-    sources: ['https://lab-website-mauve.vercel.app/'],
+    sources: ['https://lab-website-mauve.vercel.app'],
   },
 
   site: {
