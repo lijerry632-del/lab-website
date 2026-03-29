@@ -44,12 +44,7 @@ export default defineNuxtConfig({
   },
 
   sitemap: {
-    sources: [seoData.mySite],
-  },
-
-  site: {
-    url: 'https://lab-website-mauve.vercel.app',
-    name: 'Al Asad Nur Riyad',
+    sources: ['https://lab-website-mauve.vercel.app'],
   },
 
   typescript: {
