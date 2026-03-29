@@ -4,6 +4,7 @@ import { seoData } from './app/data'
 export default defineNuxtConfig({
   runtimeConfig: {
     public: {
+      // 这里的 ghToken 必须小写，对应你 image_f030e3 中的引用
       ghToken: process.env.NUXT_PUBLIC_GH_TOKEN,
     },
   },
@@ -44,9 +45,13 @@ export default defineNuxtConfig({
   },
 
   sitemap: {
-    sources: ['https://lab-website-mauve.vercel.app'],
+    sources: ['https://lab-website-mauve.vercel.app/'],
   },
 
+  site: {
+    url: 'https://lab-website-mauve.vercel.app',
+    name: 'Al Asad Nur Riyad',
+  },
   typescript: {
     strict: true,
   },
