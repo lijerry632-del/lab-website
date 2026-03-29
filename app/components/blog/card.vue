@@ -16,9 +16,9 @@ withDefaults(defineProps<Props>(), {
   title: 'no-title',
   date: 'no-date',
   description: 'no-description',
-  image: '/blogs-img/blog.jpg',
+  image: '/site-logo.png', // 统一周报列表的展示图
+  ogImage: '/site-logo.png', // 统一分享到社交平台时的预览图
   alt: 'no-alt',
-  ogImage: '/blogs-img/blog.jpg',
   tags: () => [],
   published: false,
 })

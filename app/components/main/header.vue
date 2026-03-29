@@ -24,13 +24,17 @@ function isActive(path: string) {
       </ul>
       <ul class="flex items-center space-x-3 sm:space-x-6 text-sm sm:text-lg">
         <li>
-          <NuxtLink to="/blogs" :class="{ underline: isActive('/blogs') }"> Blogs </NuxtLink>
+          <NuxtLink to="/blogs" :class="{ underline: isActive('/blogs') }"> 周汇报 </NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/categories" :class="{ underline: isActive('/categories') }"> Categories </NuxtLink>
+          <NuxtLink to="/submit" :class="{ underline: isActive('/submit') }"> 积分申请 </NuxtLink>
+        </li>
+
+        <li>
+          <NuxtLink to="/categories" :class="{ underline: isActive('/categories') }"> 资料共享 </NuxtLink>
         </li>
         <li title="About Me">
-          <NuxtLink to="/about" aria-label="About me" :class="{ underline: $route.path === '/about' }"> About </NuxtLink>
+          <NuxtLink to="/about" aria-label="About me" :class="{ underline: $route.path === '/about' }"> 关于我们 </NuxtLink>
         </li>
         <li class="flex items-center">
           <ClientOnly>
@@ -59,7 +63,6 @@ function isActive(path: string) {
               </Transition>
             </div>
             <template #fallback>
-              <!-- this will be rendered on server side -->
               <Icon name="svg-spinners:180-ring" size="20" class="-translate-y-[-20%]" />
             </template>
           </ClientOnly>
