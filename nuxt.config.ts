@@ -4,8 +4,8 @@ import { seoData } from './app/data'
 export default defineNuxtConfig({
   runtimeConfig: {
     public: {
-      ghToken: process.env.NUXT_PUBLIC_GH_TOKEN
-    }
+      ghToken: process.env.NUXT_PUBLIC_GH_TOKEN,
+    },
   },
   compatibilityDate: '2024-09-30',
 
@@ -48,7 +48,7 @@ export default defineNuxtConfig({
   },
 
   site: {
-    url: seoData.mySite,
+    url: 'https://lab-website-mauve.vercel.app',
     name: 'Al Asad Nur Riyad',
   },
 
