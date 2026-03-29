@@ -2,6 +2,12 @@ import { seoData } from './app/data'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  runtimeConfig: {
+    public: {
+      // 这里的 NUXT_PUBLIC_GH_TOKEN 对应 Vercel 里的环境变量名
+      ghToken: process.env.NUXT_PUBLIC_GH_TOKEN,
+    },
+  },
   compatibilityDate: '2024-09-30',
 
   modules: [

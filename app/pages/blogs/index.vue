@@ -238,7 +238,7 @@ import { ref, computed, onMounted } from 'vue'
 const CONFIG = {
   GH_USER: 'lijerry632-del',
   GH_REPO: 'lab-website',
-  GH_TOKEN: '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',
+  GH_TOKEN: useRuntimeConfig().public.ghToken,
   TEAM_MEMBERS: ['杨浩', '吴昊', '唐毛毛', '王明锐', '丛敬越', '韩翼', '李佳瑞'],
   SEMESTER_START: '2026-03-02',
 }
