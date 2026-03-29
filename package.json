@@ -45,6 +45,10 @@
     "unenv": "^1.10.0"
   },
   "dependencies": {
+    "@giscus/vue": "^3.1.1",
+    "@nuxtjs/markdownit": "^2.0.0",
+    "markdown-it-katex": "^2.0.3",
+    "markdown-it-mermaid": "^0.2.5",
     "nuxt-llms": "^0.1.3"
   }
 }
